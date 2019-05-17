@@ -368,8 +368,8 @@ void DataPath::Add(){
     state.SetPCoeS1(0);
     state.SetPCload(0);
     s1 = a;
-    s2 = ir;
-    dest = a + ir;
+    s2 = imm;
+    dest = a + imm;
     c = dest;
     PrintState();
     cout << "Step 4 (Save C to rs2):" << endl;
@@ -699,8 +699,8 @@ void DataPath::OrI(){
     state.SetPCoeS1(0);
     state.SetPCload(0);
     s1 = a;
-    s2 = ir;
-    dest = a | ir;
+    s2 = imm;
+    dest = a | imm;
     c = dest;
     PrintState();
     cout << "Step 4 (Save C to rs2):" << endl;
